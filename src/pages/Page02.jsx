@@ -8,14 +8,14 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import WaterDamageIcon from "@mui/icons-material/WaterDamage";
 import TvRoundedIcon from "@mui/icons-material/TvRounded";
 import { Link } from "react-router-dom";
-
-export default function Page01() {
+import Image02 from "../assets/Image02.png";
+export default function Page02() {
   return (
     <>
       <Navbar />
       <Box
         component="img"
-        src={Landing}
+        src={Image02}
         alt="Landing"
         sx={{
           maxWidth: "90%",
@@ -59,7 +59,7 @@ export default function Page01() {
 
       <Button
         component={Link}
-        to="/page02"
+        to="/page03"
         variant="contained"
         sx={{
           fontSize: 15,
