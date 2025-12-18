@@ -29,7 +29,7 @@ export default function Page03() {
     <>
       <Navbar02 />
 
-      {/* 3. Place the Progress Bar (Positioned at the top right) */}
+      
     
 
       <Typography
