@@ -16,23 +16,24 @@ export default function ProgressBar() {
         variant="determinate"
         value={100}
         size={80}
-        thickness={5}
-        sx={{ color: '#f0f4ff' }} // Light blue/grey track
+        thickness={10}
+        sx={{ color: '#f3f3f3ff' ,alignItems:'center',alignContent:'center'}} 
       />
       
-      {/* Actual Progress Circle */}
+    
       <CircularProgress
         variant="determinate"
         value={progressValue}
         size={80}
         thickness={5}
+        
         sx={{
-          color: '#ff5500', // Your orange color
+          color: '#ff5500', 
           position: 'absolute',
           left: 0,
           '& .MuiCircularProgress-circle': {
-            strokeLinecap: 'butt', // Sharp edges like the image
-            transition: 'stroke-dashoffset 0.4s ease-in-out', // Smooth movement
+            strokeLinecap: 'butt', 
+            transition: 'stroke-dashoffset 0.4s ease-in-out', 
           },
         }}
       />
@@ -46,12 +47,14 @@ export default function ProgressBar() {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
+
+
         }}
       >
-        <Typography variant="caption" sx={{ color: 'text.secondary', lineHeight: 1 }}>
+        <Typography variant="caption" sx={{ color: 'black',lineHeight: 1 }}>
           Step
         </Typography>
-        <Typography variant="body2" sx={{ fontWeight: 'bold' }}>
+        <Typography variant="body2" sx={{ fontWeight: 'bold' ,color: 'black'}}>
           {currentStep} of {totalSteps}
         </Typography>
       </Box>
